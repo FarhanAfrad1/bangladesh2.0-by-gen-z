@@ -3,10 +3,15 @@
 /* font-family: "Fira Sans", serif; */
 body {
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     font-family: "Fira Sans", serif;
-    max-width: 1280px;
     background-color: rgb(245, 245, 245);
+    
+}
+header,main{
+    margin: 0 auto;
+    max-width: 1280px;
+    
 }
 
 .text-color{
@@ -22,7 +27,7 @@ header nav {
     padding-bottom: 24px;
 }
 
-header nav div {
+.logo{
     font-size: 32px;
     font-weight: 700;
 }
@@ -63,7 +68,7 @@ header nav button:hover {
     margin: 0;
     line-height: 67px;
 }
-.banner_description button,.news button{
+.banner_description button,.news button,.donate_btn{
     padding: 17px 34px;
     margin-top: 24px;
     font-size: 18px;
@@ -75,7 +80,7 @@ header nav button:hover {
     cursor: pointer;
 
 }
-.banner_description button:hover,.news button:hover{
+.banner_description button:hover,.news button:hover,.donate_btn:hover{
     background-color: rgb(0, 90, 67)
 }
 
@@ -243,3 +248,123 @@ main{
 .news_2 .news_3{
     margin-top: 24px;
 }
+.donate{
+    margin-top: 80px;
+}
+.donate ,.donate .description{
+    text-align: center;
+}
+.donate .section_heading{
+    margin-bottom: 24px;
+}
+.donate .description{
+    margin-bottom: 32px;
+}
+.donate_amount_container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 32px;
+    
+}
+.amount{
+    padding: 40px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.amount:hover{
+    background-color: rgb(198, 228, 214);
+}
+.amount_input{
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(14, 14, 14, 0.15);
+    background: rgb(255, 255, 255);
+    width: 80%;
+    
+}
+.amount_input input{
+    padding: 20px 40px;
+    border:none;
+    width: 90%;
+    font-size: 20px;
+}
+.amount_input input::placeholder{
+    text-align: center;
+    font-size: 20px;
+}
+.donate_btn{
+    margin-top: 32px;
+}
+.subscribe{
+    margin: 80px 0;
+    background: rgb(198, 228, 214);
+    padding: 80px 100px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.subscribe_title{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.subscribe_des{
+    margin-top: 0;
+    width: 60%;
+    text-align: center;
+    color:rgba(14, 14, 14, 0.7)
+}
+.sub_input{
+    display: flex;
+    margin-top: 24px;
+    width: 70%;
+}
+.sub_input > input[type="email"]{
+    padding: 18px 40px;
+    border-radius: 8px 0px 0px 8px;
+    border: none;
+    width: 80%;
+}
+.sub_input button{
+    padding: 14px 34px;
+    border-radius: 0px 8px 8px 0px;
+    background: rgb(0, 106, 80);
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.sub_input button:hover{
+    background: rgb(0, 85, 64);
+}
+.assurance{
+    margin-top: 24px;
+    color: rgba(14, 14, 14, 0.7);
+}
+footer{
+    background: rgb(255, 255, 255);
+}
+.footer_content{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+hr{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 80%;
+    border: 1px solid rgba(14, 14, 14, 0.1);
+}
+.footer_icon{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+

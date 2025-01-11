@@ -6,6 +6,7 @@ body {
     margin: 0 auto;
     font-family: "Fira Sans", serif;
     max-width: 1280px;
+    background-color: rgb(245, 245, 245);
 }
 
 .text-color{
@@ -62,7 +63,7 @@ header nav button:hover {
     margin: 0;
     line-height: 67px;
 }
-.banner_description button{
+.banner_description button,.news button{
     padding: 17px 34px;
     margin-top: 24px;
     font-size: 18px;
@@ -71,6 +72,11 @@ header nav button:hover {
     background-color: rgb(0, 106, 80);
     border: none;
     border-radius: 8px;
+    cursor: pointer;
+
+}
+.banner_description button:hover,.news button:hover{
+    background-color: rgb(0, 90, 67)
 }
 
 /* banner style ends */
@@ -86,6 +92,7 @@ main{
 .pillers_container{
     display: flex;
     gap: 24px;
+    margin-bottom: 80px;
 }
 .pillers{
     background-color: rgb(255, 255, 255);
@@ -99,14 +106,140 @@ main{
     margin-bottom: 25px;
 }
 
-.pillers h5{
+.card_title{
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 12px;
     margin-top: 0;
 }
 
-.pillers p{
+.description{
     margin-top: 0;
     color: rgba(14, 14, 14, 0.7);
+}
+.visions_container{
+    margin-top: 32px;
+    display: flex;
+    gap: 24px;
+}
+.future_vesion .section_heading{
+    margin-bottom: 24px;
+}
+.vision img{
+    width: 62px;
+    height: 62px;
+    margin-bottom: 25px;
+}
+.vision{
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    padding: 24px;
+}
+.vision button{
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 11px 20px;
+    border: none;
+    margin-top: 24px;
+    cursor: pointer;
+}
+.vision_1{
+    background-color: rgba(84, 144, 245, 0.2);
+}
+.vision_2{
+    background-color: rgb(198, 228, 214);
+}
+.vision_3{
+    background-color: rgb(247,235,207);
+}
+.btn_1{
+    background-color: rgb(84, 144, 245);
+}
+.btn_1:hover{
+    background-color: rgb(63, 130, 246);
+}
+.btn_2{
+    background-color: rgb(9, 161, 92);
+}
+.btn_2:hover{
+    background-color: rgb(8, 147, 85);
+}
+.btn_3{
+    background-color: rgb(255, 194, 57);
+}
+.btn_3:hover{
+    background-color: rgb(254, 185, 23);
+}
+.yonus{
+    margin-top: 32px;
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    border:1px solid rgba(14, 14, 14, 0.15);
+    position:relative;
+}
+.yonus_des{
+    padding: 48px 24px;   
+}
+.younus_quote{
+    color: rgba(14, 14, 14, 0.8);
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+.yonus_des h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(14, 14, 14, 0.8);
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+.yonus_designation{
+    color: rgba(14, 14, 14, 0.6);
+    margin-top: 0;
+}
+.yonus .icon{
+    height: 54px;
+    width: 54px;
+    position: absolute;
+    left: 24px;
+    top: 43px;
+}
+
+.recent_news .section_heading{
+    margin-bottom: 24px;
+}
+.news{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    padding: 48px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 24px;
+    margin-top: 32px;
+}
+.news_thumnail img{
+    border-radius: 24px;
+}
+.news_title{
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(14, 14, 14, 0.8);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.news_pub_time,.news_text{
+    color: rgba(14, 14, 14, 0.7);
+}
+.news_text{
+    line-height: 24px;
+}
+.news button{
+    padding: 13px 26px;
+    border-radius: 8px;
+}
+.news_2{
+    flex-direction: row-reverse;
+}
+.news_2 .news_3{
+    margin-top: 24px;
 }
